@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="BTN_procesar">PROCESAR</string>
+    <string name="Hint_ingrese_una_palabra">Ingrese una palabra:</string>
+</resources>
