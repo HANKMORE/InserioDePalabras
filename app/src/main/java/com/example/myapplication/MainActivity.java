@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity{
         {
             invertido = invertido + Palabra2.charAt(i);
         }
-        if(invertido.equals(Palabra) )oso
+        if(invertido.equals(Palabra))
         {
             txtResultadodos.setText("palindromo");
         }
