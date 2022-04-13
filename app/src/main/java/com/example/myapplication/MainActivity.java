@@ -59,7 +59,16 @@ public class MainActivity extends AppCompatActivity{
         {
             invertido = invertido + Palabra2.charAt(i);
         }
-        txtResultadodos.setText(invertido);
+        if(invertido.equals(Palabra) )oso
+        {
+            txtResultadodos.setText("palindromo");
+        }
+        else
+        {
+            txtResultadodos.setText("no es palindromo");
+        }
+
+
     }
     private void recibirinfo() {
         Palabra2 = etpalabra.getText().toString();
@@ -69,6 +78,7 @@ public class MainActivity extends AppCompatActivity{
         //netamente codigo java
         Palabra=new StringBuilder(Palabra).reverse().toString();
         txtResultado.setText(Palabra);
+
 
     }
 
