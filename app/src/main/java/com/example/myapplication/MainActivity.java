@@ -48,32 +48,34 @@ public class MainActivity extends AppCompatActivity{
             }
         });
     }
-
     private void invertir() {
+        //la idea es que traten la cadena como un array
+        //donde cada letra esta en una pocision del array partiendo desde 0
+        //para tal efecto los string tienen un metodo que les pemrite
+        //devolver un caracter de una pocisiom como si fuera un array
+        //metodo se llama charAt(indice)
         String invertido="";
         for(int i =Palabra2.length()-1;i>=0;i--)
         {
-            invertido=invertido+Palabra2.charAt(i);
+            invertido = invertido + Palabra2.charAt(i);
         }
         txtResultadodos.setText(invertido);
     }
-
     private void recibirinfo() {
         Palabra2 = etpalabra.getText().toString();
     }
-
     private void invertirPalabra() {
         //manera directa de invertir una cadena
         //netamente codigo java
         Palabra=new StringBuilder(Palabra).reverse().toString();
         txtResultado.setText(Palabra);
+
     }
 
     private void recibirInformacion() {
         Palabra = etpalabra.getText().toString();
 
     }
-
     private void inicializarVistas() {
         txtResultado=findViewById(R.id.TXTresultado);
         etpalabra=findViewById(R.id.ETpalabra);
